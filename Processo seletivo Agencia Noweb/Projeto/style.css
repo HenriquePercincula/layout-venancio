@@ -1,0 +1,339 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(fonts/Montserrat/Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: #eee;
+    background-color: #222;
+    overflow-x: hidden;
+    word-spacing: -1%;
+}
+
+
+.navbar{
+    z-index: 10;
+    
+    font-size: 0.7em;
+    padding: 15px 10%;
+}
+.navbar *{
+    color: #eee!important;
+}
+.navbar .container-fluid{
+    padding: 0;
+}
+.navbar-brand img{
+   height: 27px;
+   padding: 0 5px;
+}
+.navbar-brand img:hover{
+    opacity: 0;
+ }
+ .navbar-brand:hover{
+    background: url(img/Logo.png)  no-repeat;
+ }
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+}
+.navbar-collapse{
+    float: right;
+}
+.navbar-collapse .nav-link.button{  
+    padding: 8px 20px;
+    border: 1px solid #fff;
+}
+.button{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    transition: 1s ease;
+    position: relative;
+}
+.button:hover:not(.nav-item .button){
+    text-decoration: none;   
+    color: #000;
+    padding:16px 40px;
+    border:none;
+    font-weight: bold;
+    background-image:url(img/splash.png);
+    background-size: 80%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.seta{
+    border-radius: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    background-image: url(img/stroke.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.seta:hover{
+    text-decoration: none;   
+    color: #000;
+}
+.options{
+    float: right;
+    
+}
+.nav-item{
+    padding: 0 10px;
+}
+
+.btn{
+    border-radius: 0;
+}
+.btn-outline-light:hover{
+    color: #333!important;
+}
+
+.hero-container {
+    position: relative;
+    background-image: url(img/Property\ 1=Variant2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.hero-img {
+    width: 100%;
+    z-index: -1;
+}
+
+.caption {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    font-family: Montserrat-Thin;
+}
+.caption h1{
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 90%;
+}
+.caption h1 strong, h2 strong{    
+    font-family: Montserrat-Bold;
+}
+h2{
+    font-family: Montserrat-Thin;
+    font-size: 2.4em;
+}
+.caption .button{
+    font-size:.8em;
+}
+.caption p{
+    font-size:.8em;
+    width:100%;
+    padding: 0 30%;
+}
+
+.services-container #service-thumb{
+    width: 50vw;
+    background-image: url(img/conheca-mais.png); 
+    background-size: 100%;
+}
+
+.services-container .info{
+    background-color: #dcdcdc;
+    color: #111111;
+    padding: 4em;
+}
+.services-container p{
+    font-size:.8em;
+}
+.itens{
+    filter: opacity(20%);
+}
+.itens:hover{
+    filter: opacity(100%);
+}
+.services-container .info.itens:first-child:hover > .services-container img{
+    background-image: url(img/area-externa.png);
+}
+
+.sobre{
+    background-image: url(img/muro.jpg) ;
+    height: 560px;
+    color: #fff;
+    background-size: 100%;
+    overflow: hidden;
+    font-family: Montserrat-Thin;
+}
+#descricao-sobre{
+    padding-top: 5em;
+    padding-left: 10em;
+}
+.sobre p{
+    width: 100%;
+}
+.sobre p{
+    font-size: .8em;
+    font-family: Montserrat-Thin;
+}
+.sobre .button{
+    font-size: .8em;
+}
+#quadros{
+    position: relative;
+}
+#quadros img{
+    position:absolute;
+}
+#dali{
+    right: -12%;
+    top:25%;
+    width:37%;
+}
+#frida{
+    filter:brightness(50%);
+    left:29%;
+    top:12%;
+    width:43%;
+    transition: 1s;
+}
+#frida:hover{
+    filter: brightness(100%);
+
+}
+
+.gastronomia{
+    background-image: url(img/gastronomia.png) ;
+    height: 800px;
+    color: #fff;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+    padding:1.8em 10em;
+    font-family: Montserrat-Thin;
+}
+.gastronomia p{
+    font-size: .8em;
+}
+.gastronomia .logo-grande{
+    position:absolute;
+    top: 60px;
+    width: 30%;  
+    left:0; 
+}
+.desc-gastronomia{
+    padding-top:5em;
+}
+.div-btn-gastronomia{
+    text-align: center;
+    font-size: .8em;
+    margin: 2em;
+}
+.div-btn-gastronomia .button{
+    width: 200px;
+    padding: 8px 10px;
+}
+.pratos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pratos img{
+    width: 150px;
+    float:left;
+}
+.prato-container {
+    margin-bottom: .5em;
+}
+
+.prato-container h3{
+    padding: 1em 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    z-index: 1;
+    width: 150px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.contato{   
+    padding: 5em 10em;
+}
+.contato p,.contato form *{
+    font-size: .8em;
+}
+.contato .formulario{
+    padding-left: 5em;
+}
+.contato form *{
+    border-radius: 0%;
+    background-color: rgba(0,0,0,0);
+    margin:1em 0;
+    padding: 1em;
+    width: 100%;
+}
+.contato form *::placeholder{
+    color:#fff;
+}
+.contato form *:focus{
+    text-decoration: none;
+    background-color: rgba(0,0,0);
+    border-color: #fff!important;
+}
+.contato form .button{
+    text-align: center;
+}
+.contato .mapa {
+    width:100%;
+    margin: 3em 0em;
+    border-radius: 5%;
+}
+.contato .info-contato {
+    padding-right: 5em;
+}
+.contato p i{
+    font-size: 1.3rem;
+    padding-right: 1em;
+}
+.footer{
+    background-color: #181818;
+    padding: 3em 10em 0em 10em;
+}
+.footer .redes h3,.footer span{
+    float: right;
+} 
+.footer .redes i{
+    float: right;
+    font-size: 1.3em;
+    margin: .4em;
+}
+.footer span img{
+    width:20px;
+}
+.footer p{
+    font-size: .7em;
+    width: 100%;
+}
+.footer img{
+    width: 150px;
+}
+.footer h3{
+    font-size: .7em;
+}
+.footer .desc p{
+    padding-right: 6em;
+}
